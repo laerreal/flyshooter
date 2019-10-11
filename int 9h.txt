@@ -1,0 +1,50 @@
+0xfe987: 
+  cli
+  push ax
+  mov al,0ADh
+  out 64h,al
+  mov al,0Bh
+  out 20h,al
+  in al,20h
+  and al,2h
+    je 0xfe9d5
+  in al,60h
+  sti
+  push ds
+  pusha
+  mov ah,4Fh
+  stc
+  int 15h
+    jae 0xfe9cf
+  cmp al,0E0h
+   jne 0xfe9b5
+  xor ax,ax
+  mov ds,ax
+  mov al,ds:0496h
+  or al,2h
+  mov ds:0496h,al
+   jmp 0xfe9cf
+0xfe9b5:
+  cmp al,0e1h
+  jne 0xfe9c7
+  xor ax,ax
+  mov ds,ax
+  mov al,ds:0496
+  or al,1h
+  mov ds:0469h,al
+    jmp 0xfe9cf
+0xfe9c7:
+  mov bx,0f000h
+  mov ds,bx
+  call 0xF511Bh
+0xfe9cf:
+  popa
+  pop ds
+  cli
+  call F9D58h
+0xfe9d5:
+  mov al,0AEh
+  out 64h,al
+  pop ax
+  iret
+  

@@ -1,0 +1,6 @@
+include 'point.asm'
+include 'lineFromTo.asm'
+include 'modelPainter.asm'
+include 'clearScreen.asm'
+include 'repaint.asm'
+include 'skyRender.asm'
