@@ -17,6 +17,7 @@ cli
 push 138fh
 pop es
 MOV  DL,80h ;Диск (C)
+read_again:
 MOV  DH,00  ; Сторона (головка)
 MOV  CH,00    ;Дорожка
 
@@ -26,6 +27,13 @@ mov  BX,0 ;Буфер ввода в ES:BX
 
 MOV  CL,02     ;Сектор 
 int 13h
+
+jnc normal_continue
+; Ошибка чтения, пробуем с дискеты
+mov DL, 00h ; Дискета (A)
+jmp read_again
+
+normal_continue:
 
 mov ax,138fh
 mov ds,ax
