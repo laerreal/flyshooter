@@ -1,5 +1,5 @@
-;push 1 - адрес
-;push 2 - адрес
+; push 1 - адрес
+; push 2 - адрес
 collision:
 push bp
 mov bp,sp

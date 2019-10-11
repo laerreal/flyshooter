@@ -1,8 +1,8 @@
-;push адрес массива [bp+8]
+; push адрес массива [bp+8]
 ;  dw count,element_1,element_2,...,element_count
-;push адрес буфера  [bp+6]
+; push адрес буфера  [bp+6]
 ;  dw x,y,vx,vy,hp,model
-;push element adress
+; push element adress
 
 enemyShoot:
 push bp
@@ -24,7 +24,7 @@ jl enemyShoot_end
 mov word [bx+14],0
 
 
-;jmp enemyShoot_end
+; jmp enemyShoot_end
 
 
 mov di,[bp+8]
@@ -49,9 +49,9 @@ mov di,[bp+8]
     mov [di],dx
     mov [ds:di+2],cx
     mov word [ds:di+4],0
-    mov dx,6;[_first_arrow_speed]
+    mov dx,6 ;[_first_arrow_speed]
     mov word [ds:di+6],dx
-    mov dx,1;[_first_arrow_demage]
+    mov dx,1 ;[_first_arrow_demage]
     mov word [ds:di+8],dx
     mov word [ds:di+10],arrow_model_2
     mov dx,[bx+12]

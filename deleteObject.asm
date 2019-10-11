@@ -1,4 +1,4 @@
-;push array
+; push array
 deleteObject:
 push bp
 mov bp,sp

@@ -1,6 +1,6 @@
-;push x
-;push y
-;push model
+; push x
+; push y
+; push model
 
 modelPainter:
   push bp

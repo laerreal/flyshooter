@@ -9,7 +9,7 @@ mov ds,ax
 
 in al,60h
 
-cmp al,11h;139c5
+cmp al,11h ; 139c5
 jne key_next1
   mov byte [KEY_UP],1
   mov byte [KEY_DOWN],0
@@ -101,4 +101,4 @@ pop ds
 popa
 sti
 iret
-;jmp 0f000h:0e987h
+; jmp 0f000h:0e987h

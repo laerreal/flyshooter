@@ -1,6 +1,6 @@
-;push адрес массива [bp+6]
+; push адрес массива [bp+6]
 ;  dw count,element_1,element_2,...,element_count
-;push адрес буфера  [bp+4]
+; push адрес буфера  [bp+4]
 ;  dw x,y,vx,vy,hp,model
 
 playerShoot:
@@ -30,7 +30,7 @@ playerShoot:
    ; mov dx,[player+4]
     mov word [bx+4],0
     mov dx,[_first_arrow_speed]
-    ;add dx,[player+6]
+    ; add dx,[player+6]
     mov word [bx+6],dx
     mov dx,[_first_arrow_demage]
     mov word [bx+8],dx

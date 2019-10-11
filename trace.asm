@@ -1,7 +1,7 @@
-;push x
-;push y
-;push num (2B)
-;push color
+; push x
+; push y
+; push num (2B)
+; push color
 trace:
   push bp
   mov bp,sp

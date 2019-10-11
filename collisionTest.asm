@@ -1,4 +1,4 @@
-;push массив обьектов
+; push массив обьектов
 
 collisionTest:
 push bp
@@ -34,11 +34,11 @@ push di
       jz collisionTest_next1
       mov bx,[bx]
       push word [bx+8]
-      ;mov ax,bx
+      ; mov ax,bx
       mov di,dx
       mov di,[ds:di]
       push word [ds:di+8]
-      ;mov bx,ax
+      ; mov bx,ax
       call min
           cmp bx,player
           je collisionTest_next2

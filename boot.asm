@@ -1,5 +1,5 @@
 format binary
-;org 100h
+; org 100h
 org 7c00h
 
 ; под точку входа даётся всего 2 байта, поэтому единственное, что можно сделать - прыгнуть дальше
@@ -45,7 +45,7 @@ mov word [gs:4*9+2],138fh
 
 sti
 
-jmp 138fh:0000h ;7c6b
+jmp 138fh:0000h ; 7c6b
 
 
 
@@ -88,22 +88,22 @@ _score dw 0
 
 OBJ_SIGNATURE_SIZE dw 20
 
-;keys
+; keys
 KEY_UP db 0
 KEY_DOWN db 0
 KEY_LEFT db 0
 KEY_RIGHT db 0
 KEY_FIRE1 db 0
 KEY_ESC db 0
-;end keys
+; end keys
 
 objects_array dw 1,player
 rb 150
 
-sky1 dw 10,7,16 ;count,speed,size
+sky1 dw 10,7,16 ; count,speed,size
     rd 10
 
-sky2 dw 20,4,3 ;count,speed,size
+sky2 dw 20,4,3 ; count,speed,size
     rd 20
 
 sky3 dw 30,1,1
@@ -228,7 +228,7 @@ model_t_LOST dw 13
 
 player  dw 150,150, 0, 0,10,model1, 0  ,  0,  0,   0
 ;           x,  y, vx,vy,hp,model, flag, shT, shR, type
-;type: 0-ship, 1-arrow
+; type: 0-ship, 1-arrow
 objects db 0
 
 times(6608-$) db 0

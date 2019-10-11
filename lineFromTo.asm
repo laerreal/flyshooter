@@ -1,8 +1,8 @@
-;push color
-;push x1
-;push y1
-;push x2
-;push y2
+; push color
+; push x1
+; push y1
+; push x2
+; push y2
 
 
 lineFromTo:

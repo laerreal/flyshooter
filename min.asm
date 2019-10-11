@@ -1,5 +1,5 @@
-;push arg1
-;push arg2
+; push arg1
+; push arg2
 min:
 push bp
 mov bp,sp

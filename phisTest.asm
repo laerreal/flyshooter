@@ -1,4 +1,4 @@
-;push plane
+; push plane
 
 phisTest:
   push bp

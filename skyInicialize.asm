@@ -1,4 +1,4 @@
-;push sky
+; push sky
 skyInicialize:
 push bp
 mov bp,sp

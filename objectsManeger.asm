@@ -1,4 +1,4 @@
-;push objects_array
+; push objects_array
 objectsManeger:
   push bp
   mov bp,sp

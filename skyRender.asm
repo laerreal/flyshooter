@@ -1,4 +1,4 @@
-;push sky
+; push sky
 skyRender:
 push bp
 mov bp,sp

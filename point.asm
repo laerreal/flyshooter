@@ -1,6 +1,6 @@
-;push x
-;push y
-;push color
+; push x
+; push y
+; push color
 
 point:
   push bp
