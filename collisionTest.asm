@@ -1,4 +1,4 @@
-;push массив обьектов
+;push РјР°СЃСЃРёРІ РѕР±СЊРµРєС‚РѕРІ
 
 collisionTest:
 push bp
@@ -44,7 +44,7 @@ push di
           je collisionTest_next2
           cmp di,player
           je collisionTest_next2
-          add [_score],ax ; <-- очки
+          add [_score],ax ; <-- РѕС‡РєРё
           collisionTest_next2:
       sub [bx+8],ax
        push word [bx]

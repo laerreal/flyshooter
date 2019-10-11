@@ -1,6 +1,6 @@
-;push адрес массива [bp+6]
+;push Р°РґСЂРµСЃ РјР°СЃСЃРёРІР° [bp+6]
 ;  dw count,element_1,element_2,...,element_count
-;push адрес буфера  [bp+4]
+;push Р°РґСЂРµСЃ Р±СѓС„РµСЂР°  [bp+4]
 ;  dw x,y,vx,vy,hp,model
 
 playerShoot:

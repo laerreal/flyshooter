@@ -29,7 +29,7 @@ phisTest:
      call min
        cmp word [bx+18],1
        je phisTest_next3
-       sub [player+8],ax ;вычтем hp за прропуск не пули
+       sub [player+8],ax ;РІС‹С‡С‚РµРј hp Р·Р° РїСЂСЂРѕРїСѓСЃРє РЅРµ РїСѓР»Рё
        phisTest_next3:
     pop ax
   phisTest_next2:

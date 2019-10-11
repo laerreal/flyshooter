@@ -1,6 +1,6 @@
-;push адрес массива [bp+8]
+;push Р°РґСЂРµСЃ РјР°СЃСЃРёРІР° [bp+8]
 ;  dw count,element_1,element_2,...,element_count
-;push адрес буфера  [bp+6]
+;push Р°РґСЂРµСЃ Р±СѓС„РµСЂР°  [bp+6]
 ;  dw x,y,vx,vy,hp,model
 ;push element adress
 
