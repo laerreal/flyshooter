@@ -5,3 +5,6 @@ all: boot.bin
 
 clear:
 	rm -rf boot.bin
+
+fixup_coding_style:
+	./cs.py *.asm
