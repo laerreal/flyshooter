@@ -7,21 +7,21 @@ playerShoot:
   push bp
   mov bp,sp
   push bx
-  
+
   mov bx,[bp+6]
   mov ax,[bx]
   inc ax
   mov [bx],ax
-  
+
   shl ax,1
   push ax
   shr ax,1
     mov dx,[OBJ_SIGNATURE_SIZE]
     mul dl
-    
+
     add ax,[bp+4]
     mov bx,ax
-      
+
     mov dx,[player]
     mov cx,[player+2]
     sub cx,11
@@ -39,13 +39,13 @@ playerShoot:
     mov word [bx+14],0
     mov word [bx+16],0
     mov word [bx+18],1
-  
+
   pop bx
   add bx,[bp+6]
   mov [bx],ax
-  
-   
-  
+
+
+
   pop bx
   mov sp,bp
   pop bp

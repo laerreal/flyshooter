@@ -10,9 +10,9 @@ playerMovie:
     jl playerTest_v2
       mov word [player+6],ax
     playerTest_v2:
-    
+
     neg ax
-    
+
     cmp word [player+4],ax
     jg playerTest_v3
       mov word [player+4],ax
@@ -23,7 +23,7 @@ playerMovie:
       mov word [player+6],ax
     playerTest_v4:
 
-      
+
       cmp word [player],30
     jge playerTest_x1
       mov word [player],30
@@ -33,7 +33,7 @@ playerMovie:
     jle playerTest_x2
       mov word [player],290
     playerTest_x2:
-    
+
     cmp word [player+2],20
     jge playerTest_y1
       mov word [player+2],20
@@ -43,7 +43,7 @@ playerMovie:
     jle playerTest_y2
       mov word [player+2],180
     playerTest_y2:
-    
+
     cmp word [player+6],0
     je playerTest_v8
     jl playerTest_v7

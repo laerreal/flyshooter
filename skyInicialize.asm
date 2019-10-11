@@ -18,14 +18,14 @@ push cx
   div cx
   mov [bx],dx
   add bx,2
-  
+
   call rnd
   xor dx,dx
   mov cx,200
   div cx
   mov [bx],dx
   add bx,2
-  
+
 pop cx
 loop skyInicialize_loop1
 

@@ -3,7 +3,7 @@ push bx
 push di
 push es
   in ax,40h
-  
+
   mov bx,[rndt1]
   xor ax,[bx]
   mov di,ax

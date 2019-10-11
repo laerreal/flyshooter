@@ -4,15 +4,15 @@ phisTest:
   push bp
   mov bp,sp
   push bx
-  
+
   mov bx,[bp+4]
-    
+
     ;--------------------------------
   mov ax,[bx+4]
   add [bx],ax
   mov ax,[bx+6]
   add [bx+2],ax
-  
+
   xor ax,ax
   cmp word [bx+2],-20
   jge phisTest_next1
@@ -33,8 +33,8 @@ phisTest:
        phisTest_next3:
     pop ax
   phisTest_next2:
-     
- 
+
+
   pop bx
   mov sp,bp
   pop bp

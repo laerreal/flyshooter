@@ -22,8 +22,8 @@ mov ax,[bx+14]
 cmp ax,[bx+16]
 jl enemyShoot_end
 mov word [bx+14],0
-  
-  
+
+
 ;jmp enemyShoot_end
 
 
@@ -31,18 +31,18 @@ mov di,[bp+8]
   mov ax,[di]
   inc ax
   mov [di],ax
-   
+
    shl ax,1
    add di,ax
    shr ax,1
-   
+
     mov dx,[OBJ_SIGNATURE_SIZE]
     mul dl
-    
+
     add ax,[bp+6]
     mov [ds:di],ax
     mov di,ax
-      
+
     mov dx,[bx]
     mov cx,[bx+2]
     add cx,11

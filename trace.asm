@@ -5,9 +5,9 @@
 trace:
   push bp
   mov bp,sp
-  push bx 
-   
-    
+  push bx
+
+
     mov ax,[bp+6]
     mov bx,10
     xor dx,dx
@@ -33,7 +33,7 @@ trace:
     push cx
       mov ax,[bp+10]
       add ax,[bx]
-           
+
       mov cx,[bp+8]
       add cx,[bx+2]
        push ax
@@ -43,17 +43,17 @@ trace:
       add bx,4
     pop cx
     loop trace_loop2
-  
- 
+
+
   pop bx
   mov sp,bp
   pop bp
   retn 8
-  
+
 
 numbers dw n0,n1,n2,n3,n4,n5,n6,n7,n8,n9
 
-n0 dw 12, 1,0, 2,0, 3,0, 1,1, 1,2, 1,3, 1,4, 2,4, 3,4, 3,3, 3,2, 3,1 
+n0 dw 12, 1,0, 2,0, 3,0, 1,1, 1,2, 1,3, 1,4, 2,4, 3,4, 3,3, 3,2, 3,1
 n1 dw 9, 1,0, 2,0, 3,0, 1,4, 2,4, 3,4, 2,1, 2,2 ,2,3
 n2 dw 11, 1,0, 2,0, 3,0, 1,4, 2,4, 3,4, 1,2, 2,2, 3,2, 3,1, 1,3
 n3 dw 11, 1,0, 2,0, 3,0, 1,4, 2,4, 3,4, 1,2, 2,2, 3,2, 3,1, 3,3

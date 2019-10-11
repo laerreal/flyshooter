@@ -3,7 +3,7 @@ skyRender:
 push bp
 mov bp,sp
 pusha
-  
+
   mov bx,[bp+4]
   mov cx,[bx]
   push word [bx+2]
@@ -26,12 +26,12 @@ pusha
       call point
     pop cx
     loop skyRender_loop2
-          
+
   mov ax,[var_skyRender_speed]
   add [bx+2],ax
   cmp word [bx+2],211
   jl skyRender_next1
-  
+
   mov word [bx+2],-5
   call rnd
   xor dx,dx
@@ -42,7 +42,7 @@ pusha
   add bx,4
   pop cx
   loop skyRender_loop1
-  
+
 popa
 mov sp,bp
 pop bp
