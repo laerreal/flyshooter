@@ -16,6 +16,11 @@ def fixup_coding_style(file_name):
         original = f.read()
 
     fixed = non_unix_newlines.sub(b"\n", original)
+
+    # add new line at and of file
+    if fixed[-1:] != b"\n":
+        fixed += b"\n"
+
     fixed = trailing_whitespaces.sub(b"\n", fixed)
 
     with open(file_name, "wb") as f:

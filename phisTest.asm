@@ -38,4 +38,4 @@ phisTest:
   pop bx
   mov sp,bp
   pop bp
-  retn 2      
+  retn 2
