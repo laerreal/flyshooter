@@ -1,7 +1,12 @@
 all: boot.bin
 
+boot.bin: \
+	Makefile \
+	$(shell ./includes.py boot.asm) \
+	./includes.py
+
 %.bin : %.asm
-	fasm $^
+	fasm $<
 
 clean:
 	rm -rf boot.bin
