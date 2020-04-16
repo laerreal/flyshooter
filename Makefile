@@ -3,7 +3,7 @@ all: boot.bin
 %.bin : %.asm
 	fasm $^
 
-clear:
+clean:
 	rm -rf boot.bin
 
 fixup_coding_style:
